@@ -1,0 +1,40 @@
+#%RAML 1.0
+title: blinkit-api
+description: This is a test API for learning the code builder.
+protocols: 
+  -  HTTPS
+  -  HTTP
+mediaType:
+  -  application/json
+version: v1
+baseUri: http://example.com/v1
+securitySchemes:
+  basic: !include securitySchema/basicAuthentication.raml
+
+securedBy: basic
+
+types:
+  statusResponse: !include dataTypes/statusResponse.raml
+
+/status: 
+  get: 
+    responses:
+      200: 
+        body: 
+          application/json:
+            type: any
+            example: 
+  post: 
+    body: 
+      application/json: 
+        type: any
+        example: 
+    responses:
+      200: 
+        body:
+          application/json:
+            type: statusResponse
+        
+
+
+

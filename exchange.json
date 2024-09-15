@@ -1,0 +1,10 @@
+{
+  "main": "blinkit-api.raml",
+  "name": "blinkit-api",
+  "classifier": "raml",
+  "apiVersion": "v1",
+  "descriptorVersion": "1.0.0",
+  "groupId": null,
+  "assetId": "blinkit-api",
+  "version": "1.0.0"
+}
